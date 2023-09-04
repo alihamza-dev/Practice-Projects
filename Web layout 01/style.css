@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'inter';
+}
+body {
+  background-color: #e7d9c4;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin-left: -10%;
+}
+.logo p {
+  color: white;
+  margin-top: 10px;
+}
+.logo img {
+  width: 40px;
+}
+
+nav ul {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  list-style-type: none;
+  margin-left: -8%;
+  justify-content: space-between;
+}
+ul li a {
+  color: black;
+  border: none;
+  text-align: center;
+  margin-left: 50px;
+  padding: 15px 11px;
+  display: block;
+  font-weight: 500;
+  /* background-color: white; */
+  text-decoration: none;
+  list-style-type: none;
+}
+li a:hover {
+  color: purple;
+}
+header button {
+  padding: 10px;
+  width: 100px;
+  margin-right: -130px;
+  background-color: antiquewhite;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+header button:hover {
+  background-color: black;
+  color: white;
+}
+section .left_part img {
+  width: 39%;
+  margin: -66px 6px;
+  position: absolute;
+  z-index: -1;
+}
+.right_part {
+  margin-left: 45.5%;
+}
+.right_part h1 {
+  padding-top: 4%;
+  font-weight: 800;
+  font-size: 50px;
+}
+section .content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  /* font-family: "inter"; */
+}
+.content .fa {
+  line-height: 40px;
+  display: flex;
+}
+.content .fa p {
+  margin-left: 10px;
+}
+
+.email_button {
+  margin-top: 20px;
+}
+#email {
+  padding: 15px;
+  border: none;
+  border-radius: none;
+}
+.email_button button {
+  padding: 15px;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+.logo_exp {
+  margin-left: 45%;
+  display: flex;
+  margin-top: 30px;
+}
+.logo_circle img {
+  background-color: black;
+  border-radius: 50%;
+  width: 60px;
+  padding: 10px;
+}
+.logo_exp p {
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+/* Sign Up */
+.signUp_page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e7d9c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home_button_signUp,
+#home_button_login,
+#home_button_forget {
+  position: absolute;
+  left: 30;
+  top: 30;
+  font-size: 32px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
+.singUp_penal {
+  position: absolute;
+  width: 340px;
+  height: 500px;
+  background: white;
+  color: black;
+  border-radius: 4px 0px 0px 4px;
+  font-family: 'inter';
+}
+.signUp_content h1 {
+  font-family: 'inter';
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #1a1a1a;
+}
+/* Form for gettinf information from user like Email,password and etc */
+form {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+}
+.signUp_input {
+  height: 40px;
+  width: 285px;
+  background: #fafafa;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
+}
+/* Label name foe Email,Password and Confirm Password */
+.email {
+  position: absolute;
+  top: 8%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  font-family: 'inter';
+}
+.password {
+  position: absolute;
+  top: 40%;
+  font-weight: 500;
+  /* font-style: normal; */
+  font-size: 13px;
+  font-family: 'inter';
+}
+.confirmPassword {
+  position: absolute;
+  top: 74%;
+  font-weight: 500;
+  /* font-style: normal; */
+  font-size: 13px;
+  font-family: 'inter';
+}
+/* checkbox to agree term and condition in signup panel */
+.checkbox {
+  position: absolute;
+  height: 18px;
+  top: 103.7%;
+}
+
+#checkbox {
+  position: absolute;
+  font-weight: 400;
+  font-style: normal;
+  left: 25px;
+  top: 250px;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 12px;
+}
+/* button for crating account */
+#creat_button {
+  position: absolute;
+  width: 285px;
+  height: 40px;
+  left: px;
+  top: 300px;
+  border: none;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.or {
+  position: absolute;
+  top: 84%;
+  left: 160px;
+  color: black;
+  opacity: 0.5;
+}
+#log_in {
+  padding: 5px;
+  margin-top: 112%;
+  margin-left: 42%;
+  border: none;
+  background-color: white;
+  color: blue;
+  font-family: 'inter';
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* logIn page  */
+.logIn_page_layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e7d9c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_rectenagle {
+  position: absolute;
+  width: 340px;
+  height: 440px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(54, 50, 235, 0.23);
+  border-radius: 2px;
+}
+.login_heading {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #1a1a1a;
+  text-align: center;
+  font-family: 'inter';
+}
+/*
+form {
+  position: absolute;
+  top: 90px;
+  left: 25px;
+}
+*/
+.logIn_input {
+  height: 40px;
+  width: 285px;
+  background: #fafafa;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
+}
+/* Label name foe Email,Password and Confirm Password */
+.logIn_page_email {
+  position: absolute;
+  margin-top: 15px;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+.login_password {
+  position: absolute;
+  margin-top: 15px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* checkbox to agree term and condition in signup panel */
+.logIn_page_checkbox {
+  position: absolute;
+  height: 18px;
+  top: 106%;
+}
+
+#logIn_page_checkbox {
+  position: absolute;
+  font-weight: 400;
+  font-style: normal;
+  left: 25px;
+  top: 106.5%;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.Login_page_button {
+  position: absolute;
+  width: 285px;
+  height: 40px;
+  top: 210px;
+  border: none;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#forgot_psw {
+  position: absolute;
+  left: 196px;
+  top: 107%;
+  font-family: 'inter';
+  border: none;
+  background-color: white;
+  color: #4d9af3;
+  font-size: 10px;
+  cursor: pointer;
+}
+.logIn_or {
+  position: absolute;
+  top: 336px;
+  left: 160px;
+  color: black;
+  opacity: 0.5;
+}
+#logIn_page_SignUp {
+  padding: 5px;
+  margin-top: 90%;
+  margin-left: 33%;
+  border: none;
+  background-color: white;
+  color: blue;
+  font-family: 'inter';
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* forget Password  */
+.forget_pswrd_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e7d9c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot_rectenagle {
+  position: absolute;
+  width: 340px;
+  height: 440px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(54, 50, 235, 0.23);
+  border-radius: 2px;
+}
+/* heading of forget password*/
+.forgot_heading {
+  position: absolute;
+  top: 60px;
+  left: 95px;
+  font-family: 'inter';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* peragraph of forget password*/
+.forgot_pera {
+  position: absolute;
+  width: 260px;
+  height: 66px;
+  left: 40px;
+  top: 100px;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 22px;
+  text-align: center;
+  color: #464646;
+}
+/* form for geting mail of forget password*/
+.forget_pswrd_form {
+  position: absolute;
+  top: 180px;
+  left: 25px;
+}
+/* email name handling of forget password*/
+.forget_pswrd_input {
+  height: 40px;
+  width: 285px;
+  background: #fafafa;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
+}
+/* email box of forget password*/
+.forget_page_email {
+  position: absolute;
+  margin-top: 15px;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* submit buttton of forget password*/
+#forget_submit_button {
+  position: absolute;
+  width: 285px;
+  height: 40px;
+  top: 110px;
+  border: none;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* of forget password */
+.forget_pswrd_or {
+  position: absolute;
+  top: 78%;
+  left: 160px;
+  color: black;
+  opacity: 0.5;
+}
+#forget_page_login {
+  padding: 5px;
+  margin-top: 110%;
+  margin-left: 41%;
+  border: none;
+  background-color: white;
+  color: blue;
+  font-family: 'inter';
+  font-weight: 700;
+  cursor: pointer;
+}
